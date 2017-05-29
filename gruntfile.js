@@ -5,32 +5,32 @@ module.exports = function(grunt) {
     sass: {
       options: {
         sourceMap: true
-    		},
-    		dist: {
-    			files: {
-    			 'css/main.css': 'sass/main.sass'
-       		}
-    		}
+      },
+        dist: {
+        files: {
+            'css/main.css': 'sass/main.sass'
+          }
+        }
     },
     jshint: {
       all: ['js/*.js']
     },
     watch: {
-    	scripts: {
+      scripts: {
         files: ['sass/*.sass'],
         tasks: ['sass'],
         options: {
           spawn: false,
         },
-    	}		 
-		}
+      }
+    }
 
-	});
+  });
   // Load the plugins tasks 
-	grunt.loadNpmTasks('grunt-sass');
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   
   // Default task(s).
-	grunt.registerTask('default', ['sass' , 'jshint' , 'watch']);
+  grunt.registerTask('default', ['sass' , 'jshint' , 'watch']);
 };
