@@ -1,0 +1,24 @@
+{
+  "name": "zadanie_8_3",
+  "version": "1.0.0",
+  "description": "Kolejny projekt grunt",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "kodilla-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Katarzyna Lachcik",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
